@@ -1,0 +1,4 @@
+0 piedra
+1 papel
+2 tijera
+3 Class 4
