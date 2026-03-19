@@ -40,13 +40,13 @@ if img_file_buffer is not None:
     # run the inference
     prediction = model.predict(data)
     print(prediction)
-    if prediction[0][0]>0.95:
+    if prediction[0][0]>0.12:
       st.header('Piedra, con Probabilidad: '+str( prediction[0][0]) )
-    if prediction[0][1]>0.96:
+    if prediction[0][1]>0.12:
       st.header('Papel, con Probabilidad: '+str( prediction[0][1]))
-    if prediction[0][2]>0.92:
+    if prediction[0][2]>0.12:
       st.header('Tijera, con Probabilidad: '+str( prediction[0][2]) )
-    if prediction[0][3]>0.98:
+    if prediction[0][3]>0.12:
       st.header('Nada, con Probabilidad: '+str( prediction[0][3]) )
     #if prediction[0][2]>0.5:
     # st.header('Derecha, con Probabilidad: '+str( prediction[0][2]))
